@@ -10,7 +10,7 @@
 
      <a href="#">visit google</a>
 
-     <div class="my-div">
+     <div id="my-div" style="background-color: yellow;">
          <h1>Hellow</h1>
          <h1>GoodBye</h1>
      </div>
@@ -23,6 +23,32 @@
         link.style.textDecoration = "none";
         link.style.fontSize="24px";
         link.href= "http://www.facebook.com/shaikat63";
+
+
+
+       //create element
+       var heading3 = document.createElement("h1");
+       var text = document.createTextNode("This is heading 3");
+       heading3.appendChild(text);
+
+       var myDive = document.getElementById("my-div");
+       myDive.appendChild(heading3);
+
+       //remove child
+       var heading = document.getElementsByTagName("h1")[1];
+       myDive.removeChild(heading);
+
+       //Create element Before 1st element
+       var heading0 = document.createElement("h1");
+       var text0 = document.createTextNode("This is heading 0");
+       heading0.appendChild(text0);
+
+       var heading1 = document.getElementsByTagName("h1")[0];
+       myDive.insertBefore(heading0, heading1);
+
+
+       //class add
+        document.getElementById("my-div").classlist.add("");
 
 
     </script>
