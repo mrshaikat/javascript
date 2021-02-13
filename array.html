@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Arry </title>
+</head>
+
+<body>
+    <script>
+        var names = [
+            "shaikat", "Shine", "Shipa", "Rinku", "Ashikujjaman"
+        ];
+
+        document.write(names);
+        document.write("</br>" + names.length);
+        document.write("</br>" + names[4]);
+        document.write("</br>" + names[4].length);
+        names.push("Alif");
+        document.write("</br>" + names);
+        names.pop();
+        document.write("</br>" + names);
+        var country1 = ["Bangladesh", "Pakistan"];
+        var country2 = ["India", "Finland", "Nepal"];
+
+        var country = country1.concat(country2);
+        document.write("</br>" + "All country:" + country);
+    </script>
+</body>
+
+</html>

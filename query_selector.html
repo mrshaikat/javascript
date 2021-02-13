@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Query Selector</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    
+
+   <a href="">Home</a>
+   <ul>
+       <li>
+           <a href="">Tutorial</a>
+           
+       </li>
+       <li>Bangladesh</li>
+   </ul>
+
+   <div class="my-div">
+
+      <a href="">Contact</a>
+       
+   </div>
+
+   <p>This is paragraph One</p>
+   <p>This is paragraph Tow</p>
+
+
+    <script>
+        document.querySelector("a").innerHTML = "About";
+        document.querySelector("li a").innerHTML = "View";
+        document.querySelector(".my-div a").innerHTML = "Information";
+        document.querySelectorAll("p")[0].innerHTML = "This is text";
+    </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Object</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    
+    <script>
+
+    function Student(name, age, cgpa, lange) {
+        
+        this.name= name;
+        this.age = age;
+        this.cgpa = cgpa;
+        this.lange = lange;
+
+        this.display = function () {
+            document.write(this.name);
+            document.write(this.age);
+            document.write(this.cgpa);
+            document.write(this.lang);
+        }
+
+    }
+
+    var student1 = new Student("Ashikujjamna Shaikat", 27, 3.75, ["Bengli","Hindi","English"]);
+    var student2 = new Student("Shaikat", 23, 3.70, ["Bengli","Hindi","English"]);
+    var student3 = new Student("Ashikujjamna Shaikat", 27, 3.75, ["Bengli","Hindi","English"]);
+    var student4 = new Student("Ashikujjamna Shaikat", 27, 3.75, ["Bengli","Hindi","English"]);
+    var student5 = new Student("Ashikujjamna Shaikat", 27, 3.75, ["Bengli","Hindi","English"]);
+        
+
+     student1.display();
+
+   
+
+
+        // var student = {
+        //     name = "Ashikujjamn Shaikat",
+        //     age = 27,
+        //     cgpa = 3.92,
+        //     lang = ["Bengli","Hindi","English"]
+        // }
+
+
+
+
+
+
+    </script>
+    </body>
+</html>
