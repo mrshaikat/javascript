@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Play</title>
+</head>
+<body>
+    
+       <div style="width: 654px; height: 300px; background-color: rgb(36, 155, 96); margin: 100px auto; border: 2px solid gray;">
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">A</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">B</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">C</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">D</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">E</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">F</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">G</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">H</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">I</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">J</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">K</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">L</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">M</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">N</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">O</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">P</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">Q</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">R</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">S</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">T</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">U</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">V</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">W</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">X</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">Y</button>
+        <button style="width: 70px; height: 35px; margin: 10px 10px;" class="myButton">Z</button>
+        
+        <div>
+            
+        </div>
+       </div>
+
+      
+       
+
+       
+  
+
+    <script>
+
+        var len = document.querySelectorAll(".myButton").length;
+        for(var i = 0; i<len ; i++){
+            document.querySelectorAll(".myButton")[i].addEventListener("click", function(){
+
+                var text = this.innerHTML;
+               var lowr = text.toLowerCase();
+                
+
+                
+                switch(lowr){
+                    case "a":
+                       var audio = new Audio("audio/A.wav");
+                       audio.play();
+                       break; 
+
+                    case "b":
+                       var audio = new Audio("audio/B.wav");
+                       audio.play();
+                       break;
+                    case "c":
+                       var audio = new Audio("audio/C.wav");
+                       audio.play();
+                       break; 
+                    case "d":
+                       var audio = new Audio("audio/D.wav");
+                       audio.play();
+                       break; 
+                    case "e":
+                       var audio = new Audio("audio/E.wav");
+                       audio.play();
+                       break;
+                    case "f":
+                       var audio = new Audio("audio/F.wav");
+                       audio.play();
+                       break;
+                       
+                    case "g":
+                       var audio = new Audio("audio/G.wav");
+                       audio.play();
+                       break;  
+                    case "h":
+                       var audio = new Audio("audio/H.wav");
+                       audio.play();
+                       break; 
+                       
+                    case "i":
+                       var audio = new Audio("audio/I.wav");
+                       audio.play();
+                       break;  
+                    case "j":
+                       var audio = new Audio("audio/J.wav");
+                       audio.play();
+                       break; 
+                       
+                    case "k":
+                       var audio = new Audio("audio/K.wav");
+                       audio.play();
+                       break; 
+
+                    case "l":
+                       var audio = new Audio("audio/L.wav");
+                       audio.play();
+                       break; 
+
+                    case "m":
+                       var audio = new Audio("audio/M.wav");
+                       audio.play();
+                       break; 
+
+                    case "n":
+                       var audio = new Audio("audio/N.wav");
+                       audio.play();
+                       break; 
+
+                    case "o":
+                       var audio = new Audio("audio/O.wav");
+                       audio.play();
+                       break; 
+
+                    case "p":
+                       var audio = new Audio("audio/P.wav");
+                       audio.play();
+                       break; 
+
+
+                    case "q":
+                       var audio = new Audio("audio/Q.wav");
+                       audio.play();
+                       break; 
+
+                    case "r":
+                       var audio = new Audio("audio/R.wav");
+                       audio.play();
+                       break; 
+
+                    case "s":
+                       var audio = new Audio("audio/S.wav");
+                       audio.play();
+                       break; 
+
+
+                    case "t":
+                       var audio = new Audio("audio/T.wav");
+                       audio.play();
+                       break; 
+
+                    case "u":
+                       var audio = new Audio("audio/U.wav");
+                       audio.play();
+                       break; 
+
+                    case "v":
+                       var audio = new Audio("audio/V.wav");
+                       audio.play();
+                       break;
+
+                    case "w":
+                       var audio = new Audio("audio/W.wav");
+                       audio.play();
+                       break;
+                    case "x":
+                       var audio = new Audio("audio/X.wav");
+                       audio.play();
+                       break; 
+                       
+                    case "y":
+                       var audio = new Audio("audio/Y.wav");
+                       audio.play();
+                       break; 
+
+                    case "z":
+                       var audio = new Audio("audio/Z.wav");
+                       audio.play();
+                       break; 
+                }
+
+            });
+        }
+        
+    </script>
+</body>
+</html>
