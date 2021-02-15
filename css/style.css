@@ -4,3 +4,9 @@
     font-family: impact;
     font-style: italic;
 }
+
+.anim{
+    box-shadow: -2px 11px 25px black;
+    opacity: 0.8;
+
+}
