@@ -60,9 +60,20 @@
                audioPlay(lowr);
                palyAnimation(lowr);
                
+            });
+        }
 
-                
-               function audioPlay(lowr){
+
+        document.addEventListener("keypress", function(event){
+           var text = event.key;
+           var lowr = text.toLowerCase();
+            console.log(lowr);
+           audioPlay(lowr);
+           palyAnimation(lowr);
+        });
+
+
+        function audioPlay(lowr){
                   switch(lowr){
                     case "a":
                        var audio = new Audio("audio/A.wav");
@@ -207,11 +218,7 @@
                
                }
 
-               
-                
-               
-            });
-        }
+
         
     </script>
 </body>
