@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow with map, filter
+    </title>
+</head>
+<body>
+    
+
+    <script>
+        var students =[
+            {
+                id: 101,
+                name: 'Bijoy',
+                gpa: 3.65
+            },
+            {
+                id: 102,
+                name: 'Shaikat',
+                gpa: 3.00
+            },
+            {
+                id: 103,
+                name: 'Ashikujjaman',
+                gpa: 2.65
+            },
+            {
+                id: 104,
+                name: 'Ashikujjaman',
+                gpa: 4.00
+            }
+            
+        ];
+
+        //traditional function
+        // function StudentName(){
+        //     return students.filter(function(x){
+        //         return x.gpa> 3;
+        //     }).map(function(s){
+        //         return s.name;
+        //     });
+        // }
+        //document.write(StudentName());
+
+
+
+        
+        //Arrow function
+
+        // var studentName1 = () => {
+        //     return students.filter((x) => x.gpa > 3).map((s) => s.name)
+        // }
+        // document.write(studentName1());
+
+
+        //Arrow function without return use
+        var studentName2 = () => students.filter((x) => x.gpa > 3).map((s) => s.name)
+        
+
+        
+        document.write(studentName2());
+    </script>
+</body>
+</html>

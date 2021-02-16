@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring array and objects</title>
+</head>
+<body>
+    <script>
+        //  array destructure
+        // let numbers = [10, 20, 30, 40];
+        // let [num1, num2, num3, num4] = numbers;
+        // document.write(num1);
+        // document.write(num2);
+        // document.write(num3);
+
+
+
+
+        // swap variables
+        // let a = 10, b = 20;
+        // [a, b] = [b, a];
+        // document.write(a + "</br>");
+        // document.write(b);
+
+
+
+
+        // Object destructure
+        // const studentInfo = {
+        //     id : 101,
+        //     fullName: 'Ashikujjaman Shaikat',
+        //     cgpa: 3.70
+        // }
+        // const {id, fullName} = studentInfo ;
+        // document.write(id);
+        // document.write(fullName);
+
+
+
+
+        // Nested Object destructure
+        // const studentInfo = {
+        //     id : 101,
+        //     fullName: 'Ashikujjaman Shaikat',
+        //     cgpa: 3.70,
+        //     languages: {
+        //         native: 'bangla',
+        //         beginner: 'english'
+        //     }
+        // }
+        // const {fullName, languages} = studentInfo ;
+        // document.write(languages);
+        // document.write(languages.native);
+
+
+
+
+
+        // Destructuring function parameters
+        const studentInfo = ({id, fullName}) => {
+            document.write(`${id}, ${fullName}`);
+        }    
+
+        const student = {
+            id: 101,
+            fullName: "Ashikujjaman Shikat"
+        }
+
+        studentInfo(student);
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach | for vs forEach</title>
+</head>
+<body>
+    <script>
+         var  number = [10, 20, 21];
+        // number.forEach(function(x){
+        //     document.write(x);
+        // });
+
+
+
+            // var squareNumber = [];
+            // number.forEach(function(x){
+            //     squareNumber.push(x*x);
+            // });
+
+            //document.write(squareNumber);
+
+
+
+            number.forEach(function(x, index, arr){
+                arr[index] = x+5;
+            });
+
+            document.write(number);
+
+    </script>
+</body>
+</html>
