@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synchronous vs Asynchronous programming</title>
+</head>
+<body>
+    
+    <script>
+        const taskOne = () => {
+            console.log("Task One");
+        };
+
+        const dataLoading = () => {
+            console.log("Task Two is loading");
+        }
+        
+        const taskTwo= () => {
+            //asynchronous -> multi task
+            setTimeout(dataLoading, 200);
+        };
+
+
+        const taskThree = () => {
+            console.log("Task Three");
+        };
+
+        const taskFour = () => {
+            console.log("Task Four");
+        };
+
+        taskOne();
+        taskTwo();
+        taskThree();
+        taskFour();
+    </script>
+</body>
+</html>

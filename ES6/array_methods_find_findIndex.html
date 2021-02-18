@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods | find() | findIndex()</title>
+</head>
+<body>
+    <script>
+        const students = [
+           {
+            id : 101,
+            gpa : 3.3
+           },
+
+           {
+            id : 102,
+            gpa : 2.3
+           },
+
+           {
+            id : 103,
+            gpa : 4.3
+           },
+
+           {
+            id : 104,
+            gpa : 3.80
+           },
+
+        ];
+
+        document.write(students.find(x => x.gpa>4));
+        document.write(students.findIndex(x => x.gpa>4));
+    </script>
+</body>
+</html>
